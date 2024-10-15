@@ -14,12 +14,12 @@
   <p id="result-pi"></p>
   <p id="result-multiply"></p>
   <script type="module">
-    import * as jadoo from './comman.js';
-    import multiply from './index.js';
-    document.getElementById('result-add').innerText = Add: ${jadoo.add(5, 3)};
-    document.getElementById('result-subtract').innerText = Subtract: ${jadoo.subtract(5, 3)};
-    document.getElementById('result-pi').innerText = PI: ${jadoo.PI};
-    document.getElementById('result-multiply').innerText = Multiply: ${multiply(5, 3)};
+    import * as jadoo from './msd.mjs';
+    import multiply from './import.mjs';
+    document.getElementById('result-add').innerText = `add: ${jadoo.add(5, 3)}`;
+    document.getElementById('result-subtract').innerText = `subtract: ${jadoo.subtract(5, 3)}`;
+    document.getElementById('result-pi').innerText = `PI: ${jadoo.PI}`;
+    document.getElementById('result-multiply').innerText = `Multiply: ${multiply(5, 3)}`;
   </script>
 </body>
 
