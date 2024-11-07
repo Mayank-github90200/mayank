@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>login form</h2>
-    <form>
-        <label>enter email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type ="email" placeholder="enter email" required>
-        <br>
-    <label>enter password</label>
-    <input type="password" name="pass" placeholder="enter password" required>
-    <br><br>
-    <input type="submit" name="btn" value="login">
-    &nbsp;&nbsp;
-    <input type="reset" value="clear data">
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style1.css" />
+    </head>
+    <body>
+        <div class="container">
+            <label for="username">Username:</label>
+            <input
+                name="username"
+                type="text"
+                placeholder="Enter Username : "
+                id="username-field"
+            />
+            <br />
+            <label for="password">Password : </label>
+            <input
+                id="password-field"
+                name="password"
+                type="password"
+                placeholder="Enter Password : "
+            />
+            <div class="btn-container">
+                <button type="submit" id="submit-btn">Submit</button>
+                <button type="submit" id="reset-btn">Reset</button>
+            </div>
+        </div>
+        <script src="script1.js"></script>
+    </body>
 </html>
